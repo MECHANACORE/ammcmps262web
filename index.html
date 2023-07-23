@@ -4,6 +4,7 @@
 <head>
     <title>My Personal Page</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="jquery-3.3.1.min.js"> </script>
 </head>
 <div id="navbar">
     <ul>
@@ -14,6 +15,25 @@
 </div>
 
 <body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Point Park Place</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Welcome to the site</p>
+        </div>
+        <div data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </div><!--navbar-->
+        </div><!--footer-->
+    </div><!--page-->
+
     <div>
         <img src="Images/profile.jpg" width="200" />
         <div>
