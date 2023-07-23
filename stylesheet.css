@@ -1,18 +1,19 @@
- body {
-     font-family: Georgia, 'Times New Roman', Times, serif green;
- }
+body {
+    background-color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif green;
+}
 
- h1 {
-     color: purple;
-     font-size: 36px
- }
+h1 {
+    color: purple;
+    font-size: 36px
+}
 
- h2 {
-     color: midnightblue;
- }
+h2 {
+    color: midnightblue;
+}
 
- p {
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     color: darkgreen;
-     font-size: 20px
- }
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgreen;
+    font-size: 20px
+}
