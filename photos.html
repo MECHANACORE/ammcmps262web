@@ -4,17 +4,23 @@
     <title>Photos</title>
     <script src="jquery-3.3.1.min.js"> </script>
     <script>
-        $("button#toggle").on("click", function () {
-            $("img").toggle();
-        }); 
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("img").hide();
+            });
+            $("#show").click(function () {
+                $("img").show();
+            });
+        });
     </script>
 </head>
 
 <body>
     <div>
-        <img src="Images/profile.jpg" width="200" height="200" />
+        <img src="Images/profile.jpg" width="200" height="300" />
         <br>
-        <button id="toggle">Hide/unhide</button>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
 
     </div>
 
