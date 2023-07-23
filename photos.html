@@ -6,10 +6,10 @@
     <script>
         $(document).ready(function () {
             $("#hide").click(function () {
-                $(img).hide();
+                $("img").hide();
             });
             $("#show").click(function () {
-                $(img).show();
+                $("img").show();
             });
         });
     </script>
@@ -17,7 +17,7 @@
 
 <body>
     <div>
-        <img src="Images/profile.jpg" width="200" height="300" />
+        <img src="Images/profile.jpg" id="img" width="200" height="300" />
         <br>
         <button id="hide">Hide</button>
         <button id="show">Show</button>
