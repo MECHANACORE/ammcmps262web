@@ -3,11 +3,16 @@
 <head>
     <title>Photos</title>
     <script src="jquery-3.3.1.min.js"> </script>
+    <script>
+        $("button#toggle").on("click", function () {
+            $("img").toggle();
+        }); 
+    </script>
 </head>
 
 <body>
     <div>
-        <img src="Images/profile.jpg" width="200" height="117" />
+        <img src="Images/profile.jpg" width="200" height="200" />
         <br>
         <button id="toggle">Hide/unhide</button>
 
