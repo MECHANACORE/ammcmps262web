@@ -4,41 +4,75 @@
 <head>
     <title>My Personal Page</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#photos">Photos</a>
+        <a href="#classes">Classes</a>
+        <a href="#hobbies">Hobbies</a>
+    </div><!--navbar-->
 </head>
 
-
 <body>
-    <div data-role="page" id="page1">
-        <div data-role="main" class="ui-content">
-            <p>Welcome to the site</p>
-        </div>
-        <div data-role="footer">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" class="ui-btn-active">Home</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="classes.html">Classes</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                </ul>
-            </div><!--navbar-->
-        </div><!--footer-->
-    </div><!--page-->
-
-
     <div>
         <h1>Andrew Mintus</h1>
         <h2>Hello World!</h2>
         <h4>I'm an Applied Computer Science Student</h4>
     </div>
 
-
-    <h3>Contact Info</h3>
-    <li>
-        Phone: 724-931-3935
-        Email: Andrew.Mintus@gmail.com
-    </li>
     </div>
+    <h1>My Hobbies</h1>
+    <div class="dropdown"><button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Gardening</a>
+            <a href="#">Gaming</a>
+            <a href="#">Computers</a>
+        </div>
+    </div>
+    <div>
+        <h3>Interests</h3>
+        <li>
+            <ul>
+                <p>Planting</p>
+                <p>Weeding</p>
+            </ul>
+            <ul>
+                <p>Gaming</p>
+                <p>Modded Gaming</p>
+            </ul>
+            <ul>
+                <p>Desktops</p>
+                <p> Laptops</p>
+                <p>Tablets</p>
+            </ul>
+        </li>
+        <div class="classes">
+            <h1>My Classes this Semester</h1>
+            <p>I am only taking Advanced Programming this semester as it is the last before my Senior Project.</p>
+
+        </div>
+        <div>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+        </div>
+        <div class="photos">
+            <script>$(document).ready(function () {
+                    $("#hide").click(function () {
+                        $("#image").hide();
+                    });
+                    $("#show").click(function () {
+                        $("#image").show();
+                    });
+                });
+            </script>
+            <img id="image" src="Images/profile.jpg" width="200" height="300" />
+            <img id="image" src="Images/Cat.jpg" width="200" height="300" />
+        </div><!---Second Photo not hiding? Oh well its a cat picture--->
 </body>
+<h3>Contact Info</h3>
+<li>
+    Phone: 724-931-3935
+    Email: Andrew.Mintus@gmail.com
+</li>
 
 </html>

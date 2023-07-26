@@ -1,2 +1,0 @@
-This is my documentation to support my CICD configuration.
-Adding new line.
