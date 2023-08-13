@@ -71,8 +71,6 @@ app.put('/api/games/:id', (req, res) => {
 });
 
 //delete
-
-//put
 app.delete('/api/games/:id', (req, res) => {
     const mygame = games.find(t => t.id === parseInt(req.params.id));
     if (!mygame) return res.status(404).send('The game with the ID was not found');
