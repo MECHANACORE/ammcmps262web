@@ -7,7 +7,7 @@ const port = 6002;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("hello world");
+    res.send("./index.html");
 })
 
 app.use("/api/v1/vegetables", vegetableRoutes);
